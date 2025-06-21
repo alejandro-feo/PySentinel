@@ -58,7 +58,7 @@ echo "Iniciando la instalación de la librería $APP_NAME..."
 echo "Copiando la librería a $LIB_INSTALL_DIR..."
 rm -rf "$LIB_INSTALL_DIR"
 mkdir -p "$LIB_INSTALL_DIR"
-cp -r secure_module/* "$LIB_INSTALL_DIR/"
+cp -r sapiman/* "$LIB_INSTALL_DIR/"
 # COPIAMOS TAMBIÉN EL CLIENTE A LA LIBRERÍA, YA QUE ES PARTE DE ELLA
 cp key_setter_client.py "$LIB_INSTALL_DIR/"
 
