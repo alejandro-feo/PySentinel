@@ -5,7 +5,7 @@
 set -e
 
 # --- Variables de Configuración ---
-APP_NAME="pysentinel"
+APP_NAME="sapiman"
 LIB_INSTALL_DIR="/usr/local/lib/$APP_NAME"
 BIN_DIR="/usr/local/bin"
 MASTER_KEY_DIR="/etc/secure_api_keys"
