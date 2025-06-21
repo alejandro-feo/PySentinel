@@ -1,5 +1,3 @@
----
-
 # 🛡️ PySentinel: Guardián de Credenciales con Seguridad Fortificada
 
 ![Versión de Python](https://img.shields.io/badge/python-3.8+-blue.svg)
