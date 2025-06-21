@@ -102,4 +102,4 @@ fi
 echo ""
 echo "¡Instalación de la librería completada!"
 echo "La herramienta 'key-manager' ya está disponible globalmente."
-echo "Ahora puedes importar 'secure_module' en cualquiera de tus scripts de Python."
+echo "Ahora puedes importar 'sapiman' en cualquiera de tus scripts de Python."
