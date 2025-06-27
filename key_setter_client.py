@@ -10,13 +10,13 @@ import sys
 from pathlib import Path
 
 # La ruta donde el instalador colocó los módulos.
-# Es necesario para que el script encuentre el paquete 'secure_module'.
+# Es necesario para que el script encuentre el paquete 'sapiman'.
 INSTALL_DIR = "/usr/local/lib" 
 sys.path.insert(0, INSTALL_DIR)
 
 try:
     # La importación del paquete realiza la autoverificación de integridad.
-    from secure_module import SecureAPIManager
+    from sapiman import SecureAPIManager
 except (RuntimeError, ImportError) as e:
     print(f"Error crítico al cargar el módulo de seguridad:", file=sys.stderr)
     print(f"{e}", file=sys.stderr)

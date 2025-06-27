@@ -4,7 +4,7 @@
 # Elimina los archivos de la aplicación y los enlaces simbólicos.
 
 # --- Variables de Configuración ---
-APP_NAME="secure_module"
+APP_NAME="sapiman"
 INSTALL_DIR="/usr/local/lib/$APP_NAME"
 BIN_DIR="/usr/local/bin"
 
@@ -23,7 +23,7 @@ echo "Desinstalando el paquete $APP_NAME..."
 
 # 1. Eliminar enlaces simbólicos
 echo "Eliminando enlaces simbólicos..."
-rm -f "$BIN_DIR/key-manager"
+rm -f "$BIN_DIR/sapiman"
 rm -f "$BIN_DIR/secure-app-example"
 
 # 2. Eliminar directorio de la aplicación

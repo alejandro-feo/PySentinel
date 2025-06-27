@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Aplicación de ejemplo que demuestra el uso del paquete secure_module.
+Aplicación de ejemplo que demuestra el uso del paquete sapiman.
 """
 import sys
 
@@ -11,7 +11,7 @@ sys.path.insert(0, INSTALL_DIR)
 try:
     # La importación del paquete realiza la autoverificación de integridad.
     # Si hay un problema de seguridad, la importación fallará con un error.
-    from secure_module import SecureAPIManager
+    from sapiman import SecureAPIManager
 except (RuntimeError, ImportError) as e:
     print(f"Error crítico al cargar el módulo de seguridad:", file=sys.stderr)
     print(f"{e}", file=sys.stderr)
@@ -22,7 +22,7 @@ def main():
     Función principal que demuestra cómo obtener una clave de forma segura.
     """
     print("Módulo de seguridad cargado y verificado con éxito.")
-    print("Este script es un ejemplo. Usa 'key-manager' para gestionar claves.")
+    print("Este script es un ejemplo. Usa 'sapiman' para gestionar claves.")
     
     key_name = input("Introduce el nombre de la clave que quieres obtener: ")
     if not key_name:

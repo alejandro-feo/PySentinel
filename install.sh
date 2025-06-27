@@ -84,8 +84,8 @@ chmod -R 555 "$LIB_INSTALL_DIR"
 chmod 444 "$LIB_INSTALL_DIR/hashes.db"
 
 # 4. Crear el enlace simbólico para la herramienta de CLI.
-echo "Creando enlace simbólico para 'key-manager' en $BIN_DIR..."
-ln -sf "$LIB_INSTALL_DIR/key_setter_client.py" "$BIN_DIR/key-manager"
+echo "Creando enlace simbólico para 'sapiman' en $BIN_DIR..."
+ln -sf "$LIB_INSTALL_DIR/key_setter_client.py" "$BIN_DIR/sapiman"
 
 # 5. Configurar la clave maestra si no existe.
 if [ ! -f "$MASTER_KEY_FILE" ]; then
@@ -101,5 +101,5 @@ fi
 
 echo ""
 echo "¡Instalación de la librería completada!"
-echo "La herramienta 'key-manager' ya está disponible globalmente."
+echo "La herramienta 'sapiman' ya está disponible globalmente."
 echo "Ahora puedes importar 'sapiman' en cualquiera de tus scripts de Python."
