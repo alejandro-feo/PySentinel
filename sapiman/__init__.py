@@ -1,5 +1,5 @@
 """
-Inicializa el paquete secure_module.
+Inicializa el paquete sapiman.
 
 Este archivo actúa como un guardián de seguridad. Su principal responsabilidad es
 ejecutar una autocomprobación de integridad de todos los archivos del paquete
@@ -19,5 +19,5 @@ _verifier.self_check()
 #    Esta línea solo se alcanza si la autocomprobación no lanzó excepciones.
 from ._manager import SecureAPIManager
 
-# Define la API pública del paquete para importaciones como 'from secure_module import *'.
+# Define la API pública del paquete para importaciones como 'from sapiman import *'.
 __all__ = ['SecureAPIManager']
